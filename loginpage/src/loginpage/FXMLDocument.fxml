@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpage.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="login_form" layoutX="69.0" layoutY="74.0" prefHeight="500.0" prefWidth="800.0" stylesheets="@design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="289.0" prefHeight="500.0" prefWidth="514.0" styleClass="login-bg" stylesheets="@design.css">
+               <children>
+                  <FontAwesomeIcon glyphName="USER" layoutX="217.0" layoutY="180.0" size="9em" text="">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.9886362911625343" startY="0.7575757575757576">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.04417349025607109" green="0.013918128795921803" blue="0.17894737422466278" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.326869398355484" green="0.38947367668151855" blue="0.07645224034786224" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+                  <TextField fx:id="username" layoutX="149.0" layoutY="250.0" onMouseClicked="#textfield" prefWidth="220.0" promptText="Username" styleClass="textfield-design" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" layoutX="149.0" layoutY="292.0" onMouseClicked="#textfield" onMouseDragged="#textfield" prefWidth="220.0" promptText="Password" styleClass="textfield-design" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="login_btn" layoutX="223.0" layoutY="354.0" mnemonicParsing="false" onAction="#login" styleClass="button-design" stylesheets="@design.css" text="Login">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.7389380784161322" centerY="0.7916666594418613" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8810994029045105" green="0.8842105269432068" blue="0.6975438594818115" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7431111335754395" green="0.5866666436195374" blue="0.800000011920929" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Hyperlink fx:id="create_acc" layoutX="182.0" layoutY="435.0" onAction="#changeForm" styleClass="hypertext-design" stylesheets="@design.css" text="Create new Account">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="209.0" layoutY="195.0" text="Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="469.0" layoutY="10.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" styleClass="exit" stylesheets="@design.css">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" size="2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="290.0" styleClass="login-card" stylesheets="@design.css">
+               <children>
+                  <Label fx:id="nferhan" layoutX="72.0" layoutY="321.0" text="nFerhan" textAlignment="CENTER">
+                     <font>
+                        <Font name="Lucida Sans Demibold Roman" size="35.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.7500000577984434" endY="1.0" startX="0.7500000027093021" startY="0.5492423881183971">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.2688654959201813" green="0.006549707613885403" blue="0.5894736647605896" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="f" layoutX="87.0" layoutY="77.0" prefHeight="62.0" prefWidth="30.0" text="F" textAlignment="CENTER">
+                     <font>
+                        <Font name="Lucida Sans Demibold Roman" size="200.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.7537878959467917" startY="0.3409090547850638">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.44999998807907104" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9436647295951843" green="0.9894737005233765" blue="0.07329434901475906" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signup_form" layoutX="-2.0" prefHeight="500.0" prefWidth="800.0" stylesheets="@design.css" visible="false">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="514.0" styleClass="login-bg" stylesheets="@design.css">
+               <children>
+                  <TextField fx:id="su_email" layoutX="143.0" layoutY="234.0" onMouseClicked="#su_textfield" onMouseDragged="#su_textfield" prefWidth="220.0" promptText="Email Address" styleClass="textfield-design" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="su_password" layoutX="143.0" layoutY="316.0" onMouseClicked="#su_textfield" onMouseDragged="#su_textfield" prefWidth="220.0" promptText="Password" styleClass="textfield-design" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField fx:id="su_username" layoutX="143.0" layoutY="274.0" onMouseClicked="#su_textfield" onMouseDragged="#su_textfield" prefWidth="220.0" promptText="Username" styleClass="textfield-design" stylesheets="@design.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="signup_btn" layoutX="212.0" layoutY="367.0" mnemonicParsing="false" onAction="#changeForm" styleClass="button-design" stylesheets="@design.css" text="SignUp">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.7389380784161322" centerY="0.7916666594418613" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8810994029045105" green="0.8842105269432068" blue="0.6975438594818115" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.7431111335754395" green="0.5866666436195374" blue="0.800000011920929" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Button>
+                  <Hyperlink fx:id="login_acc" layoutX="181.0" layoutY="435.0" onAction="#changeForm" styleClass="hypertext-design" stylesheets="@design.css" text="Login your Account?">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="193.0" layoutY="172.0" text="Sign Up">
+                     <font>
+                        <Font name="Berlin Sans FB" size="40.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="USER_PLUS" layoutX="199.0" layoutY="157.0" size="9em" wrappingWidth="115.19999999999999">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.9886362911625343" startY="0.7575757575757576">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.04417349025607109" green="0.013918128795921803" blue="0.17894737422466278" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.326869398355484" green="0.38947367668151855" blue="0.07645224034786224" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </FontAwesomeIcon>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="512.0" prefHeight="500.0" prefWidth="290.0" styleClass="login-card" stylesheets="@design.css">
+               <children>
+                  <Label fx:id="nferhan1" layoutX="72.0" layoutY="321.0" text="nFerhan" textAlignment="CENTER">
+                     <font>
+                        <Font name="Lucida Sans Demibold Roman" size="35.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.7500000577984434" endY="1.0" startX="0.7500000027093021" startY="0.5492423881183971">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.2688654959201813" green="0.006549707613885403" blue="0.5894736647605896" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="f1" layoutX="87.0" layoutY="77.0" prefHeight="62.0" prefWidth="30.0" text="F" textAlignment="CENTER">
+                     <font>
+                        <Font name="Lucida Sans Demibold Roman" size="200.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.7537878959467917" startY="0.3409090547850638">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.44999998807907104" blue="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9436647295951843" green="0.9894737005233765" blue="0.07329434901475906" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button layoutX="252.0" layoutY="7.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" styleClass="exit" stylesheets="@design.css">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.437894731760025" green="0.16421052813529968" blue="0.821052610874176" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <FontAwesomeIcon glyphName="CLOSE" layoutX="258.0" layoutY="31.0" size="2em" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

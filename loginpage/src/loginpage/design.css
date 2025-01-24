@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Oca 2025, 16:29:23
+    Author     : Lenovo
+*/
+
+.login-bg{
+    -fx-background-color: linear-gradient(to top left, #d8e76a, #3e28dc, #000000);
+}
+
+.login-card{
+    
+    -fx-background-color: #000000
+}
+
+.textfield-design{
+    -fx-background-color: #e0f0ff;
+    -fx-background-radius: 20px;
+    -fx-border-color: #30365f;
+    -fx-border-radius: 20px;
+    -fx-text-inner-color: #000;
+  
+}
+
+.button-design{
+    -fx-background-color: #000000;
+    -fx-background-radius:40px;
+    -fx-cursor: hand;
+}
+
+.button-design:hover{
+    -fx-background-color: #3e28dc;
+}
+
+.hypertext-design{
+    -fx-text-fill: #30365f;
+    -fx-border-color: none;
+    -fx-border-widgth:0px;
+    
+}
+
+.ferhan{
+  /*  -fx-text-fill:*/
+    -fx-cursor:hand;
+}
+
+.exit{
+    -fx-background-color: #3c24d5;
+    -fx-cursor:hand;
+    -fx-background-radius:50px;
+}
+
+.exit:hover{
+    
+    -fx-background-color: #3c24d5;
+}
