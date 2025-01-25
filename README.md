@@ -1,4 +1,4 @@
-## Login and Signup App
+## Login and Signup App 
 
 A simple JavaFX application with login and signup functionality connected to a MySQL database.
 
